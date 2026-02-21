@@ -15,7 +15,11 @@ app.set('views',path.join(__dirname, 'views'));
 
 
 const connection = mysql.createConnection({
-    // write your database credentiaals
+    // write your database credentials in form 
+    // host: "host-name"
+    // user: "root"
+    // passwrod: "********"
+    // database: "node_SQL"
 });
 
 let getRandomUser = () => {
@@ -199,3 +203,4 @@ app.delete('/users/:id', (req,res) => {
 app.listen(3000,() => {
     console.log("Server is running to port 3000");
 });
+
